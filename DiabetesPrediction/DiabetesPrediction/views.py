@@ -7,6 +7,9 @@ from django.http import HttpResponse
 def home(request):
     return render(request, 'home.html')
 
+def contactus(request):
+    return render(request, 'contactus.html')
+
 def predict(request):
     return render(request, 'predict.html')
 

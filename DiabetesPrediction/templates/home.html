@@ -7,55 +7,97 @@
   {% load static %}
 
   <style type="text/css">
-    div{
-      color : white;
-    }
-    h1{
-        color:#00214D;
-        font-family: arial,sans-serif;
-        font-size:60px;
-        font-weight: bold;
-        margin:0;
-    }
-
-    h2{
-        color:'white';
-        font-family: arial,sans-serif;
-        font-size:15px;
-        font-weight: bold;
-        margin-top:20px;
-    }
-
+    /* Body and background styles */
     body {
       min-height: 100vh;
       background-image: url("{% static 'DiabetesPrediction/images/img1.jpg' %}");
       background-repeat: no-repeat;
-      background-size: cover;  /* This makes sure the image covers the entire body without repeating */
+      background-size: cover;
       background-size: 100% 100%;
       background-attachment: fixed;
       display: flex;
       justify-content: center;
       align-items: center;
-      flex-direction: column;  /* Align items vertically */
+      flex-direction: column;
       text-align: center;
-      }
+      font-family: Arial, sans-serif;
+    }
+
+    /* Header navigation styles */
+    nav {
+      width: 100%;
+      background-color: #003153;
+      padding: 15px 0;
+      position: fixed;
+      top: 0;
+      left: 0;
+      display: flex;
+      justify-content: center;
+      z-index: 1000;
+    }
+
+    nav a {
+      color: white;
+      padding: 15px 20px;
+      text-decoration: none;
+      font-size: 18px;
+      text-align: center;
+    }
+
+    nav a:hover {
+      background-color: #00214D;
+      border-radius: 5px;
+    }
+
+    /* Main content styles */
+    div {
+      color: white;
+      margin-top: 100px;  /* To prevent overlap with the fixed header */
+    }
+
+    h1 {
+      color: #00214D;
+      font-family: Arial, sans-serif;
+      font-size: 60px;
+      font-weight: bold;
+      margin: 0;
+    }
+
+    h2 {
+      color: white;
+      font-family: Arial, sans-serif;
+      font-size: 15px;
+      font-weight: bold;
+      margin-top: 20px;
+    }
+
     input[type="submit"] {
-        background-color:#003153;
-        border:2px;
-        color:white;
-        padding:16px 32px;
-        cursor: pointer;
-        margin-top:15px;
-     }
+      background-color: #003153;
+      border: 2px;
+      color: white;
+      padding: 16px 32px;
+      cursor: pointer;
+      margin-top: 15px;
+    }
   </style>
 </head>
 <body>
-  <div align = "center">
+  <!-- Navigation Bar -->
+  <nav>
+    <a href="home">Home</a>
+    <a href="recommendations">Recommendations</a>
+    <a href="contactus">Contact Us</a>
+    <a href="predict">Predict</a>
+
+  </nav>
+
+  <!-- Main Content -->
+  <div align="center">
     <h1>
-      WELCOME TO DIABETES PREDICTION SYSTEM
+      WELCOME TO DIABETES PREDICTION SYSTEM!!
     </h1>
     <form action="predict">
-      <input type="submit" value="Lets get started">
+      <input type="submit" value="Let's get started">
     </form>
   </div>
 </body>

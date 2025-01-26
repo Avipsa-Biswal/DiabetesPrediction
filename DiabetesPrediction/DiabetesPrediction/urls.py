@@ -20,8 +20,9 @@ from . import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path("",views.home),
-    path('predict/', views.predict),
-path("",views.home),
-    path('predict/result', views.result),
+    path("", views.home, name="home"),  # Home page
+    path('predict/', views.predict, name="predict"),  # Predict page
+    path('contactus/', views.contactus, name="contactus"),  # Contact us page
+    path('predict/result', views.result, name="result"),
 ]
+
