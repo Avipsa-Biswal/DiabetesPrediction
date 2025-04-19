@@ -1,4 +1,4 @@
-#Diabetes Prediction Using Machine Learning 🩺 
+Diabetes Prediction Using Machine Learning 🩺 
 
 Early detection of diabetes can significantly improve patient outcomes and reduce the risk of complications. This project applies machine learning techniques to predict the likelihood of diabetes based on medical and demographic data. It serves as both a practical healthcare tool and a hands-on ML learning project.
 
