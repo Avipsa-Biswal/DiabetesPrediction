@@ -55,26 +55,25 @@ Models were evaluated and compared based on their predictive accuracy and genera
 Ensemble approaches or hyperparameter tuning could further enhance performance in future iterations.
 
 📁 Project Structure
-DiabetesPrediction/
-├── data/
-│   └── diabetes.csv                 # Dataset file
-│
-├── notebooks/
-│   └── Diabetes_Prediction.ipynb   # Full workflow: EDA, training, evaluation
-│
-├── src/
-│   ├── preprocessing.py            # Data cleaning and preparation scripts
-│   └── train_models.py             # ML model training and evaluation logic
-│
-├── models/
-│   └── trained_model.pkl           # Saved version of the best model
-│
-├── results/
-│   ├── confusion_matrix.png        # Visualized confusion matrix
-│   └── metrics_report.txt          # Evaluation report
-│
-├── requirements.txt                # Python dependencies
-└── README.md                       # Project documentation
+data/: Contains the diabetes.csv dataset from the Pima Indians Diabetes Database.
+
+notebooks/: Jupyter notebooks for EDA, model training, and evaluation.
+
+Diabetes_Prediction.ipynb: Complete ML pipeline.
+
+src/: Modular code scripts.
+
+preprocessing.py: Handles missing values and scaling.
+
+train_models.py: Trains and evaluates ML models.
+
+models/: Stores saved models for reuse (trained_model.pkl).
+
+results/: Includes performance outputs like confusion_matrix.png and metrics_report.txt.
+
+requirements.txt: Lists project dependencies.
+
+README.md: Project documentation and overview.
 
 💡 Motivation
 Healthcare Impact: Diabetes is a global health issue — early prediction can guide early intervention.
@@ -84,10 +83,18 @@ Educational Value: Offers a practical implementation of ML classification pipeli
 Scalability: Models can be extended for deployment into web apps or APIs for real-world use.
 
 🔧 Installation & Setup
+
 Clone the repository:
 git clone https://github.com/Avipsa-Biswal/DiabetesPrediction.git
+
 cd DiabetesPrediction
+
+
 Create a virtual environment and install dependencies:
+
 pip install -r requirements.txt
+
+
 Run the Jupyter Notebook:
+
 jupyter notebook notebooks/Diabetes_Prediction.ipynb
